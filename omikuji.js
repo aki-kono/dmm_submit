@@ -2,7 +2,10 @@ let username;
 let userresult;
 username = prompt("お名前を教えて下さい。");
 
-
+/*もし名前が空欄だったら「名無し」にする */
+if ( username == "" ) {
+  username = "名無し"
+}
 
 document.getElementById("name").innerHTML = username;
 
